@@ -30,7 +30,7 @@ jobs:
     - name: Build Library (MSVC16)
       run: |
         cd projects/VS2019
-        msbuild.exe raylib.sln /property:Configuration=Release /property:Platform=x86
+        msbuild.exe raylib.sln /property:Configuration=Release /property:Platform=x86 /m
         cd ../..
       shell: cmd
 

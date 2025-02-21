@@ -110,9 +110,9 @@ jobs:
     - name: Build Library (MSVC16)
       run: |
         cd projects/VS2022
-        msbuild.exe raylib.sln /target:raylib /property:Configuration=Release /property:Platform=${{ matrix.ARCH }}
+        msbuild.exe raylib.sln /target:raylib /property:Configuration=Release /property:Platform=${{ matrix.ARCH }} /m
         copy /Y .\build\raylib\bin\${{ matrix.VSARCHPATH }}\Release\raylib.lib .\..\..\build\${{ env.RELEASE_NAME }}\lib\raylib.lib
-        msbuild.exe raylib.sln /target:raylib /property:Configuration=Release.DLL /property:Platform=${{ matrix.ARCH }}
+        msbuild.exe raylib.sln /target:raylib /property:Configuration=Release.DLL /property:Platform=${{ matrix.ARCH }} /m
         copy /Y .\build\raylib\bin\${{ matrix.VSARCHPATH }}\Release.DLL\raylib.dll .\..\..\build\${{ env.RELEASE_NAME }}\lib\raylib.dll
         copy /Y .\build\raylib\bin\${{ matrix.VSARCHPATH }}\Release.DLL\raylib.lib .\..\..\build\${{ env.RELEASE_NAME }}\lib\raylibdll.lib
         cd ../..
