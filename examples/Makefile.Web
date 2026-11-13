@@ -716,6 +716,7 @@ SHADERS = \
     shaders/shaders_shapes_textures \
     shaders/shaders_simple_mask \
     shaders/shaders_spotlight_rendering \
+    shaders/shaders_sprite_occlusion \
     shaders/shaders_texture_outline \
     shaders/shaders_texture_rendering \
     shaders/shaders_texture_tiling \
@@ -1585,6 +1586,14 @@ shaders/shaders_spotlight_rendering: shaders/shaders_spotlight_rendering.c
 	$(CC) -o $@$(EXT) $< $(CFLAGS) $(INCLUDE_PATHS) $(LDFLAGS) $(LDLIBS) -D$(PLATFORM) \
     --preload-file shaders/resources/raysan.png@resources/raysan.png \
     --preload-file shaders/resources/shaders/glsl100/spotlight.fs@resources/shaders/glsl100/spotlight.fs
+
+shaders/shaders_sprite_occlusion: shaders/shaders_sprite_occlusion.c
+	$(CC) -o $@$(EXT) $< $(CFLAGS) $(INCLUDE_PATHS) $(LDFLAGS) $(LDLIBS) -D$(PLATFORM) \
+    --preload-file shaders/resources/kenney_tree.png@resources/kenney_tree.png \
+    --preload-file shaders/resources/scarfy.png@resources/scarfy.png \
+    --preload-file shaders/resources/shaders/glsl100/occlusion_dither.fs@resources/shaders/glsl100/occlusion_dither.fs \
+    --preload-file shaders/resources/shaders/glsl100/occlusion_cutout.fs@resources/shaders/glsl100/occlusion_cutout.fs \
+    --preload-file shaders/resources/shaders/glsl100/occlusion_silhouette.fs@resources/shaders/glsl100/occlusion_silhouette.fs
 
 shaders/shaders_texture_outline: shaders/shaders_texture_outline.c
 	$(CC) -o $@$(EXT) $< $(CFLAGS) $(INCLUDE_PATHS) $(LDFLAGS) $(LDLIBS) -D$(PLATFORM) \

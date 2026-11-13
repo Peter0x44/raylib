@@ -755,6 +755,7 @@ SHADERS = \
     shaders/shaders_shapes_textures \
     shaders/shaders_simple_mask \
     shaders/shaders_spotlight_rendering \
+    shaders/shaders_sprite_occlusion \
     shaders/shaders_texture_outline \
     shaders/shaders_texture_rendering \
     shaders/shaders_texture_tiling \

@@ -19,7 +19,7 @@ Run the following commands from the repository root:
 - `zig build [module]` to compile all examples for a module (e.g. `zig build core`)
 - `zig build [example]` to compile _and run_ a particular example (e.g. `zig build core_basic_window`)
 
-## EXAMPLES COLLECTION [TOTAL: 223]
+## EXAMPLES COLLECTION [TOTAL: 224]
 
 ### category: core [49]
 
@@ -232,7 +232,7 @@ Examples using raylib models functionality, including models loading/generation 
 | [models_mesh_uv_painting](models/models_mesh_uv_painting.c) | <img src="models/models_mesh_uv_painting.png" alt="models_mesh_uv_painting" width="80"> | ⭐⭐⭐⭐️ | 6.0 | 6.0 | [PanicTitan](https://github.com/PanicTitan) |
 | [models_procedural_decals](models/models_procedural_decals.c) | <img src="models/models_procedural_decals.png" alt="models_procedural_decals" width="80"> | ⭐⭐⭐⭐️ | 6.0 | 6.0 | [PanicTitan](https://github.com/PanicTitan) |
 
-### category: shaders [36]
+### category: shaders [37]
 
 Examples using raylib shaders functionality, including shaders loading, parameters configuration and drawing using them (model shaders and postprocessing shaders). This functionality is directly provided by raylib [rlgl](../src/rlgl.h) module.
 
@@ -274,6 +274,7 @@ Examples using raylib shaders functionality, including shaders loading, paramete
 | [shaders_rlgl_compute](shaders/shaders_rlgl_compute.c) | <img src="shaders/shaders_rlgl_compute.png" alt="shaders_rlgl_compute" width="80"> | ⭐⭐⭐⭐️ | 4.0 | 4.0 | [Teddy Astie](https://github.com/tsnake41) |
 | [shaders_cel_shading](shaders/shaders_cel_shading.c) | <img src="shaders/shaders_cel_shading.png" alt="shaders_cel_shading" width="80"> | ⭐⭐⭐☆ | 6.0 | 6.0 | [Gleb A](https://github.com/ggrizzly) |
 | [shaders_lights_bloom](shaders/shaders_lights_bloom.c) | <img src="shaders/shaders_lights_bloom.png" alt="shaders_lights_bloom" width="80"> | ⭐⭐⭐☆ | 6.0 | 6.0 | [PanicTitan](https://github.com/PanicTitan) |
+| [shaders_sprite_occlusion](shaders/shaders_sprite_occlusion.c) | <img src="shaders/shaders_sprite_occlusion.png" alt="shaders_sprite_occlusion" width="80"> | ⭐⭐☆☆ | 6.5 | 6.5 | [Peter0x44](https://github.com/Peter0x44) |
 
 ### category: audio [11]
 
